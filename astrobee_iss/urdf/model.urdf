@@ -72,7 +72,8 @@
         <mesh filename="package://astrobee_iss/meshes/jpm.dae"/>
       </geometry>
     </visual>
-    <collision name="iss_jpm_collision">
+    <!-- ANA HACK: MIGRATION TO GAZEBO : THIS MESH IS GIVING CRASHES WITH DART, SOMETHING ABOUT NO NORMAL -->
+    <!--<collision name="iss_jpm_collision">
       <origin xyz="10.9358938 -2.3364698 4.8505872" rpy="3.1415 0 -1.570796" />
       <geometry>
         <mesh filename="package://astrobee_iss/meshes/jpm.dae"/>
@@ -84,7 +85,7 @@
           </contact>
         </surface>
       </gazebo>
-    </collision>
+    </collision>-->
     <!-- Node 1 -->
     <visual name="iss_node_1_visual">
       <origin xyz="-4.4630848 -0.0027432 4.8508666" rpy="0 0 0" />
